@@ -1,0 +1,81 @@
+html {
+    background: linear-gradient(to bottom right, steelblue, cadetblue) no-repeat center center fixed;
+    font-family: 'Rosario', sans-serif;
+    color: whitesmoke;
+}
+
+.container {
+    width: 75%;
+    padding-top: 2%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
+
+#inner-container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.task-information {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+button {
+    margin-top: 25px;
+    background-color: skyblue;
+    height: 40px;
+    width: 160px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: 'Rosario', sans-serif;
+    color: darkslateblue;
+    font-size: 0.95rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#task-table {
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+    display: none;
+    text-align: center;
+    border: 6px solid skyblue;
+}
+
+#centerX {
+    padding: 0px 80px;
+}
+
+#imgX {
+    width: 50px;
+    margin-top: 70px;
+}
+
+img {
+    width: 150px;
+    position: relative;
+}
+
+#img0, #img1 {
+    height: auto;
+    width: 150px;
+}
+
+.table-div {
+    width: 200px;
+    height: 230px;
+    overflow: hidden;
+}
+
+#start-real {
+    visibility: hidden;
+}
