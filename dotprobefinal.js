@@ -1,7 +1,7 @@
 (function() {
     
-    var threatStimuli = ["IMAGES/abz2.jpg", "IMAGES/abz3.jpg", "IMAGES/george2.jpg", "IMAGES/george3.jpg", "IMAGES/james2.jpg", "IMAGES/james3.jpg", "IMAGES/loick2.jpg", "IMAGES/loick3.jpg", "IMAGES/martina2.jpg", "IMAGES/martina3.jpg", "IMAGES/mike2.jpg", "IMAGES/mike3.jpg", "IMAGES/oz2.jpg", "IMAGES/oz3.jpg", "IMAGES/sharmila2.jpg", "IMAGES/sharmila3.jpg"];
-    var nonThreatStimuli = ["IMAGES/abz1.jpg", "IMAGES/abz4.jpg", "IMAGES/george1.jpg", "IMAGES/george4.jpg", "IMAGES/james1.jpg", "IMAGES/james4.jpg", "IMAGES/loick1.jpg", "IMAGES/loick4.jpg", "IMAGES/martina1.jpg", "IMAGES/martina4.jpg", "IMAGES/mike1.jpg", "IMAGES/mike4.jpg", "IMAGES/oz1.jpg", "IMAGES/oz4.jpg", "IMAGES/sharmila1.jpg", "IMAGES/sharmila4.jpg"];
+    var threatStimuli = ["IMAGES/abz2.webp", "IMAGES/abz3.webp", "IMAGES/george2.webp", "IMAGES/george3.webp", "IMAGES/james2.webp", "IMAGES/james3.webp", "IMAGES/loick2.webp", "IMAGES/loick3.webp", "IMAGES/martina2.webp", "IMAGES/martina3.webp", "IMAGES/mike2.webp", "IMAGES/mike3.webp", "IMAGES/oz2.webp", "IMAGES/oz3.webp", "IMAGES/sharmila2.webp", "IMAGES/sharmila3.webp"];
+    var nonThreatStimuli = ["IMAGES/abz1.webp", "IMAGES/abz4.webp", "IMAGES/george1.webp", "IMAGES/george4.webp", "IMAGES/james1.webp", "IMAGES/james4.webp", "IMAGES/loick1.webp", "IMAGES/loick4.webp", "IMAGES/martina1.webp", "IMAGES/martina4.webp", "IMAGES/mike1.webp", "IMAGES/mike4.webp", "IMAGES/oz1.webp", "IMAGES/oz4.webp", "IMAGES/sharmila1.webp", "IMAGES/sharmila4.webp"];
 
     var imgX = document.getElementById("imgX");
     var img0 = document.getElementById("img0");
@@ -116,9 +116,9 @@
     };
     
     function calculateUserReactionTime() {
-        // End Timer
+        
         var endTime = new Date().getTime();
-        //calculate difference 
+        
         var userResponseTimeInMilliseconds = endTime - startTime;
         
         return userResponseTimeInMilliseconds;
@@ -128,7 +128,7 @@
         trialCounter++;
         if (trialCounter < trialLength) {
             if (realTrials) {
-                typeOfTrial(realTrialsResponse, 500, 1500);
+                typeOfTrial(realTrialsResponse, 1500, 1500);
             } else {
                 typeOfTrial(practiceTrialsResponse, 100, 500);
             }
@@ -182,7 +182,7 @@
         resetAllImages();
         document.getElementById("text").style.display = "none";
         document.getElementById("start-real").style.display = "none";
-        initiateTrial(realTrialsResponse, 500, 1500);
+        initiateTrial(realTrialsResponse, 1500, 1500);
     });
     
 }());
